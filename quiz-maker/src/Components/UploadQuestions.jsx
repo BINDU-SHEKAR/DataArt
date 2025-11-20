@@ -12,7 +12,7 @@ function UploadQuestions() {
     formData.append('file', file);
 
     try {
-      const res = await fetch('http://localhost:5001/api/questions/csv', {
+      const res = await fetch('http://localhost:5000/api/questions/csv', {
         method: 'POST',
         body: formData
       });

@@ -52,7 +52,7 @@ const AboutUs = () => {
         },
         {
             question: "Can I collaborate with others on quizzes?",
-            answer: "At the moment, ScoreMax is designed for individual users to create and manage their quizzes. Collaborative features may be introduced in future updates.",
+            answer: "At the moment, QuiaMaster is designed for individual users to create and manage their quizzes. Collaborative features may be introduced in future updates.",
         },
         {
             question: "How do I report a bug or request a feature?",

@@ -40,7 +40,7 @@ app.use(express.json());
 app.use(cors());
 
 // ✅ Mount API routes
-app.use('/api', userRouter);
+app.use('/api/users', userRouter);
 app.use('/api/quizzes', quizRouter);
 app.use('/api/questions', uploadRoutes); // ✅ Mount upload route correctly
 app.use('/api/question-bank', questionBankRouter); // optional
@@ -116,7 +116,7 @@ setInterval(autoSubmitQuizzes, 60 * 1000);
 sequelize.sync().then(() => {
   console.log('MySQL connected and models synced');
 
-  const PORT = process.env.PORT || 5001;
+  const PORT = process.env.PORT || 5000;
 
   // ✅ Serve frontend
   app.use(express.static(path.join(__dirname, '../quiz-maker/build')));

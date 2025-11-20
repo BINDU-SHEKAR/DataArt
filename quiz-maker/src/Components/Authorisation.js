@@ -71,7 +71,7 @@ const Authorisation = () => {
       }
     }
 
-    const endpoint = isSignUp ? "/register" : "/login";
+    const endpoint = isSignUp ? "/register" : "/users/login";
     const requestUrl = `${process.env.REACT_APP_BACKEND_URL}${endpoint}`;
 
     try {

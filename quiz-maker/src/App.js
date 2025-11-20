@@ -20,6 +20,9 @@ import QuestionBank from "./Components/QuestionBank";
 import SubjectQuiz from "./Components/SubjectQuiz";
 import UploadQues from "./Components/AddQues";
 import UploadPage from "./pages/UploadPage";
+import Login from './Components/Login';
+
+
 
 // Helper to check admin role
 const isAdmin = () => localStorage.getItem("role") === "admin";
@@ -36,6 +39,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/aboutus" element={<Aboutus />} />
+<Route path="/login" element={<Login />} />
 
         {/* Admin-only Routes */}
         {isAdmin() && (

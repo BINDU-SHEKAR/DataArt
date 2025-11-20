@@ -1,4 +1,4 @@
-const { Quiz, User, QuizResult, QuizProgress,QuizQuestion} = require('../models');
+const { Quiz, User, QuizResult, QuizProgress } = require('../models');
 
 // ---------------------- QUIZ PROGRESS ----------------------
 
@@ -8,6 +8,10 @@ exports.checkQuizTaken = async (req, res) => {
   try {
     const quiz = await Quiz.findOne({ where: { quiz_id: req.params.quiz_id } });
     if (!quiz) return res.status(404).json({ msg: 'Quiz not found' });
+
+    const parsedQuestions = Array.isArray(quiz.questions)
+      ? quiz.questions
+      : JSON.parse(quiz.questions);
 
     let quizProgress = await QuizProgress.findOne({
       where: { quiz_id: req.params.quiz_id, user_id: req.user.id },
@@ -30,10 +34,7 @@ exports.checkQuizTaken = async (req, res) => {
 
       let score = 0;
       const answersWithCorrectness = quizProgress.answers.map((answer) => {
-        const question = Array.isArray(quiz.questions)
-          ? quiz.questions.find((q) => q.question_id === answer.question_id)
-          : JSON.parse(quiz.questions).find((q) => q.question_id === answer.question_id);
-
+        const question = parsedQuestions.find((q) => q.question_id === answer.question_id);
         const isCorrect = question?.correctAnswer === answer.selectedOption;
         if (isCorrect) score++;
         return { ...answer, isCorrect };
@@ -47,9 +48,10 @@ exports.checkQuizTaken = async (req, res) => {
         return res.status(400).json({ msg: 'Quiz already taken' });
       }
 
-      if (!quiz.takenBy.includes(req.user.id)) {
-        quiz.takenBy.push(req.user.id);
-        await quiz.save();
+      const takenBy = Array.isArray(quiz.takenBy) ? quiz.takenBy : [];
+      if (!takenBy.includes(req.user.id)) {
+        takenBy.push(req.user.id);
+        await quiz.update({ takenBy });
       }
 
       await QuizResult.create({
@@ -63,31 +65,28 @@ exports.checkQuizTaken = async (req, res) => {
     await quizProgress.save();
     res.json({ msg: 'Quiz progress saved' });
   } catch (err) {
-    console.error(err);
+    console.error('❌ Error in checkQuizTaken:', err);
     res.status(500).json({ msg: 'Server error' });
   }
 };
+
+// ---------------------- QUIZ DETAILS WITH ANSWERS ----------------------
 
 exports.getQuizDetailsWithAnswers = async (req, res) => {
   try {
     const quiz = await Quiz.findOne({ where: { quiz_id: req.params.quiz_id } });
     if (!quiz) return res.status(404).json({ msg: 'Quiz not found' });
 
-    let questions = [];
-    try {
-      questions = Array.isArray(quiz.questions)
-        ? quiz.questions
-        : JSON.parse(quiz.questions);
-    } catch (err) {
-      console.error('❌ Failed to parse quiz questions:', err);
-      return res.status(500).json({ msg: 'Invalid quiz format' });
-    }
+    const questions = Array.isArray(quiz.questions)
+      ? quiz.questions
+      : JSON.parse(quiz.questions);
 
     const result = await QuizResult.findOne({
       where: { quiz_id: req.params.quiz_id, user_id: req.user.id }
     });
 
     let selectedAnswers = [];
+
     try {
       selectedAnswers = result?.answers
         ? Array.isArray(result.answers)
@@ -215,6 +214,8 @@ exports.deleteQuiz = async (req, res) => {
   }
 };
 
+// ---------------------- SINGLE QUIZ ----------------------
+
 exports.getSingleQuiz = async (req, res) => {
   try {
     const quiz = await Quiz.findOne({
@@ -224,83 +225,154 @@ exports.getSingleQuiz = async (req, res) => {
 
     if (!quiz) return res.status(404).json({ msg: 'Quiz not found' });
 
-    // Safely parse questions
-    let questions = [];
-    try {
-      questions = Array.isArray(quiz.questions)
-        ? quiz.questions
-        : JSON.parse(quiz.questions);
-    } catch (err) {
-      console.error('❌ Failed to parse quiz questions:', err);
-      questions = [];
-    }
-
-    const numberOfParticipants = Array.isArray(quiz.takenBy)
-      ? quiz.takenBy.length
-      : 0;
+    const numberOfParticipants = quiz.takenBy?.length || 0;
 
     res.json({
       quiz_id: quiz.quiz_id,
       title: quiz.title,
       description: quiz.description,
-      createdBy: quiz.User?.username || 'Unknown',
-      questions,
+      createdBy: quiz.User.username,
+      questions: quiz.questions,
       timeLimit: quiz.timeLimit,
       lastUpdated: quiz.lastUpdated,
       numberOfParticipants,
     });
   } catch (err) {
-    console.error('❌ Failed to fetch single quiz:', err);
+    console.error(err);
     res.status(500).json({ msg: 'Server error' });
   }
 };
 
+// ---------------------- FINAL SUBMISSION ----------------------
 
-const { v4: uuidv4 } = require('uuid');
-
-exports.generateQuiz = async (req, res) => {
-  const { subject, count = 60 } = req.body;
-
+exports.markQuizAsTaken = async (req, res) => {
   try {
-    // Fetch all questions for the subject
-    const questions = await QuizQuestion.findAll({ where: { subject } });
+    const { answers } = req.body;
+    const quiz_id = req.params.quiz_id;
 
-    if (questions.length === 0) {
-      return res.status(404).json({ msg: 'No questions found for this subject' });
-    }
+    const quiz = await Quiz.findOne({ where: { quiz_id } });
+    if (!quiz) return res.status(404).json({ msg: 'Quiz not found' });
 
-    // Shuffle and select the desired number of questions
-    const shuffled = questions.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+    const parsedQuestions = Array.isArray(quiz.questions)
+      ? quiz.questions
+      : JSON.parse(quiz.questions);
 
-    // Format questions for frontend
-    const formatted = selected.map((q) => ({
-      question_id: q.id,
-      questionText: q.questionText,
-      options: q.options,
-      correctAnswer: q.correctAnswer
-    }));
-
-    // Log the selected count for debugging
-    console.log(`✅ Selected ${selected.length} questions for subject: ${subject}`);
-
-    // Create and save the quiz
-    const quiz_id = uuidv4();
-
-    await Quiz.create({
-      quiz_id,
-      title: `${subject} Quiz`,
-      description: `Auto-generated quiz for ${subject}`,
-      questions: JSON.stringify(formatted), // ✅ Save formatted subset
-      timeLimit: 30,
-      createdBy: req.user.id,
-      takenBy: []
+    const existingResult = await QuizResult.findOne({
+      where: { quiz_id, user_id: req.user.id },
     });
+    if (existingResult) {
+      return res.status(400).json({ msg: 'Quiz already submitted' });
+    }
+    
 
-    // Return quiz ID to frontend
-    res.status(201).json({ quiz_id });
-  } catch (err) {
-    console.error('❌ Failed to generate quiz:', err);
-    res.status(500).json({ msg: 'Server error' });
+   let score = 0;
+const answersWithCorrectness = answers.map((answer) => {
+  const question = parsedQuestions.find((q) => q.question_id === answer.question_id);
+  const isCorrect = question?.correctAnswer === answer.selectedOption;
+  if (isCorrect) score++;
+  return { ...answer, isCorrect };
+});
+
+// Store result
+await QuizResult.create({
+  quiz_id,
+  user_id: req.user.id,
+  score,
+  answers: JSON.stringify(answersWithCorrectness), // ensure stored as JSON string
+});
+
+// Safely update takenBy list
+let takenBy = Array.isArray(quiz.takenBy) ? quiz.takenBy : [];
+if (!takenBy.includes(req.user.id)) {
+  takenBy.push(req.user.id);
+  await quiz.update({ takenBy });
+}
+
+// Clear progress
+await QuizProgress.destroy({ where: { quiz_id, user_id: req.user.id } });
+
+res.json({ msg: 'Quiz submitted successfully', score });
+} catch (err) {
+  console.error('❌ Error submitting quiz:', err);
+  res.status(500).json({ msg: 'Server error' });
+}
+};
+
+exports.createQuiz = async (req, res) => {
+try {
+  const { title, description, questions, timeLimit } = req.body;
+
+  // Basic validation
+  if (!title || !questions || !Array.isArray(questions) || questions.length === 0) {
+    return res.status(400).json({ msg: 'Title and questions are required' });
   }
+
+  // Create quiz
+  const newQuiz = await Quiz.create({
+    quiz_id: `quiz_${Date.now()}`, // unique ID
+    title,
+    description,
+    questions: JSON.stringify(questions), // ensure stored as JSON string
+    timeLimit,
+    createdBy: req.user.id,
+    takenBy: [], // initialize empty array
+    lastUpdated: new Date(),
+  });
+
+  res.status(201).json({ msg: 'Quiz created successfully', quiz: newQuiz });
+} catch (err) {
+  console.error('❌ Error creating quiz:', err);
+  res.status(500).json({ msg: 'Server error' });
+}
+};
+
+exports.getQuizDetailsWithAnswers = async (req, res) => {
+try {
+  const quiz = await Quiz.findOne({ where: { quiz_id: req.params.quiz_id } });
+  if (!quiz) return res.status(404).json({ msg: 'Quiz not found' });
+
+  // Parse questions safely
+  let questions = [];
+  try {
+    questions = Array.isArray(quiz.questions)
+      ? quiz.questions
+      : JSON.parse(quiz.questions);
+  } catch (err) {
+    console.error('❌ Failed to parse quiz.questions:', err);
+    return res.status(500).json({ msg: 'Invalid quiz format' });
+  }
+
+  const result = await QuizResult.findOne({
+    where: { quiz_id: req.params.quiz_id, user_id: req.user.id }
+  });
+
+  let selectedAnswers = [];
+  try {
+    selectedAnswers = result?.answers
+      ? Array.isArray(result.answers)
+        ? result.answers
+        : JSON.parse(result.answers)
+      : [];
+  } catch (err) {
+    console.error('❌ Failed to parse selectedAnswers:', err);
+    selectedAnswers = [];
+  }
+
+  const questionsWithSelected = questions.map(q => {
+    const selected = selectedAnswers.find(a => a.question_id === q.question_id);
+    return {
+      ...q,
+      selectedOption: selected?.selectedOption || null
+    };
+  });
+
+  res.json({
+    quiz_id: quiz.quiz_id,
+    title: quiz.title,
+    questions: questionsWithSelected
+  });
+} catch (err) {
+  console.error('❌ Failed to fetch quiz details with answers:', err);
+  res.status(500).json({ msg: 'Server error' });
+}
 };

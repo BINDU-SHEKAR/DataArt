@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    document.title = 'Home | ScoreMax';
+    document.title = 'Home | Quiz Master';
   }, []);
 
   const handleSignUp = () => navigate('/register');

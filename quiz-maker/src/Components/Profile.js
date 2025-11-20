@@ -32,10 +32,10 @@ const Profile = () => {
       if (!token) return;
 
       try {
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/me`, {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/me`, {
           headers: {
             'Content-Type': 'application/json',
-            'x-auth-token': token,
+            Authorization: `Bearer ${token}`,
           },
         });
 
@@ -54,17 +54,19 @@ const Profile = () => {
 
   const handleUsernameSubmit = async (e) => {
     e.preventDefault();
-    if (newUsername.length < 6 || newUsername.includes(' ')) {
+    setUsernameError('');
+
+    if (!newUsername.trim() || newUsername.length < 6 || newUsername.includes(' ')) {
       setUsernameError('Username must be at least 6 characters and contain no spaces.');
       return;
     }
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/update-username`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/update-username`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'x-auth-token': localStorage.getItem('token'),
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
         body: JSON.stringify({ username: newUsername }),
       });
@@ -74,7 +76,8 @@ const Profile = () => {
         setUsernameError(data.msg || 'Failed to update username.');
       } else {
         alert('Username updated successfully');
-        window.location.reload();
+        setUsername(newUsername);
+        setNewUsername('');
       }
     } catch (error) {
       console.error('Error updating username:', error);
@@ -84,6 +87,10 @@ const Profile = () => {
 
   const handlePasswordSubmit = async (e) => {
     e.preventDefault();
+    setPasswordError('');
+    setConfirmPasswordError('');
+    setOldPasswordError('');
+
     if (!passwordRegex.test(password)) {
       setPasswordError('Password must include uppercase, lowercase, and a number.');
       return;
@@ -94,11 +101,11 @@ const Profile = () => {
     }
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/update-password`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/update-password`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'x-auth-token': localStorage.getItem('token'),
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
         body: JSON.stringify({ oldPassword, password }),
       });
@@ -112,7 +119,9 @@ const Profile = () => {
         }
       } else {
         alert('Password updated successfully');
-        window.location.reload();
+        setOldPassword('');
+        setPassword('');
+        setConfirmPassword('');
       }
     } catch (error) {
       console.error('Error updating password:', error);

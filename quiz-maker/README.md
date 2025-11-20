@@ -110,7 +110,7 @@ ScoreMax
 
 ## Environment Variables
 
-- **REACT_APP_BACKEND_URL:** `http://localhost:5001/api`
+- **REACT_APP_BACKEND_URL:** `http://localhost:5000/api`
 - **REACT_APP_FRONTEND_URL:** `http://localhost:3000`
 
 ## Usage

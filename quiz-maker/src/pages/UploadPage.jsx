@@ -64,7 +64,7 @@ const UploadPage = () => {
     formData.append('file', fileInput.files[0]);
 
     try {
-      const response = await axios.post('http://localhost:5001/api/questions/upload-csv', formData, {
+      const response = await axios.post('http://localhost:5000/api/questions/upload-csv', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'x-auth-token': localStorage.getItem('token')
@@ -72,7 +72,7 @@ const UploadPage = () => {
       });
 
       setErrors(Array.isArray(response.data.errors) ? response.data.errors : []);
-      alert(`✅ Uploaded ${response.data.inserted} questions\n⚠️ Skipped: ${response.data.skipped}`);
+      alert(`✅ Uploaded ${response.data.inserted} questions\n`);
     } catch (err) {
       console.error('❌ Upload error:', err.response?.data || err.message);
       alert('Upload failed: ' + (err.response?.data?.msg || err.message));

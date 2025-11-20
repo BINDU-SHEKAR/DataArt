@@ -11,65 +11,44 @@ const SubjectQuiz = () => {
   const [submitted, setSubmitted] = useState(false);
   const [finalScore, setFinalScore] = useState(null);
   const [timeLeft, setTimeLeft] = useState(1800); // 30 minutes
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const generateQuiz = async () => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      window.location.href = '/login';
-      return;
-    }
-
-    setLoading(true);
-
-    try {
-      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/quizzes/generate`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
-        body: JSON.stringify({ subject, count: 60 }) // ✅ limit to 60 questions
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.msg || 'Quiz generation failed');
-
-      console.log('✅ Quiz ID:', data.quiz_id);
-      setQuizId(data.quiz_id);
-
-      const quizRes = await fetch(`${process.env.REACT_APP_BACKEND_URL}/quizzes/${data.quiz_id}`, {
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        }
-      });
-
-      const quizData = await quizRes.json();
-      console.log('📦 Raw quizData.questions:', quizData.questions);
-
-      let parsedQuestions = [];
+  useEffect(() => {
+    const generateQuiz = async () => {
       try {
-        parsedQuestions = Array.isArray(quizData.questions)
+        const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/quizzes/generate`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+          },
+          body: JSON.stringify({ subject })
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.msg || 'Quiz generation failed');
+
+        setQuizId(data.quiz_id);
+
+        const quizRes = await fetch(`${process.env.REACT_APP_BACKEND_URL}/quizzes/${data.quiz_id}`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+          }
+        });
+
+        const quizData = await quizRes.json();
+        const parsedQuestions = Array.isArray(quizData.questions)
           ? quizData.questions
-          : typeof quizData.questions === 'string'
-            ? JSON.parse(quizData.questions)
-            : [];
+          : JSON.parse(quizData.questions);
 
-        if (!Array.isArray(parsedQuestions)) throw new Error('Parsed questions is not an array');
+        setQuestions(parsedQuestions);
       } catch (err) {
-        console.error('❌ Failed to parse questions JSON:', err.message);
-        parsedQuestions = [];
+        console.error('❌ Failed to generate quiz:', err.message);
       }
+    };
 
-      setQuestions(parsedQuestions);
-    } catch (err) {
-      console.error('❌ Failed to generate quiz:', err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
+    generateQuiz();
+  }, [subject]);
 
   useEffect(() => {
     if (submitted || questions.length === 0) return;
@@ -98,7 +77,7 @@ const SubjectQuiz = () => {
   };
 
   const handleSubmit = async () => {
-    if (submitted) return;
+    if (submitted || questions.length === 0) return;
 
     let score = 0;
     questions.forEach((q, i) => {
@@ -109,9 +88,8 @@ const SubjectQuiz = () => {
     const payload = {
       quiz_id: quizId,
       answers: questions.map((q, i) => ({
-        questionId: q.question_id,
-        selected: answers[i],
-        correct: q.correctAnswer
+        question_id: q.question_id,
+        selectedOption: answers[i] || null
       })),
       score
     };
@@ -121,12 +99,14 @@ const SubjectQuiz = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-auth-token': localStorage.getItem('token')
+          Authorization: `Bearer ${localStorage.getItem('token')}`
         },
         body: JSON.stringify(payload)
       });
 
       const result = await res.json();
+      if (!res.ok) throw new Error(result.msg || 'Submission failed');
+
       setSubmitted(true);
     } catch (err) {
       console.error('❌ Failed to submit quiz:', err.message);
@@ -142,17 +122,6 @@ const SubjectQuiz = () => {
       </div>
     );
   }
-
-  if (!quizId) {
-  return (
-    <div className="start-screen">
-      <h2>{subject} Quiz</h2>
-      <button className="start-button" onClick={generateQuiz} disabled={loading}>
-        {loading ? 'Generating...' : 'Start Quiz'}
-      </button>
-    </div>
-  );
-}
 
   if (questions.length === 0) {
     return <p>Loading questions for {subject}...</p>;
@@ -178,6 +147,5 @@ const SubjectQuiz = () => {
     </div>
   );
 };
-
 
 export default SubjectQuiz;

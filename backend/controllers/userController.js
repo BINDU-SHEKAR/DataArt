@@ -9,12 +9,15 @@ require('dotenv').config();
 
 // ---------------------- REGISTER ----------------------
 const register = async (req, res) => {
+  console.log('Incoming body:', req.body); // 🔍 Shows what frontend is sending
+
   const zodResult = validations.registrationSchema.safeParse(req.body);
+  console.log('Validation result:', zodResult); // 🔍 Shows if validation passed or failed
+
   if (!zodResult.success) {
     const errors = zodResult.error.errors.map((err) => err.message).join(', ');
     return res.status(400).json({ msg: errors });
   }
-
   const { username, email, password, role } = zodResult.data;
 
   try {

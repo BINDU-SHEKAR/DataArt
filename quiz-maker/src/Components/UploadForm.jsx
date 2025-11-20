@@ -9,7 +9,7 @@ function UploadForm() {
     formData.append('file', file);
 
     try {
-      const res = await fetch('/http://localhost:5001/api/questions/upload', { method: 'POST', headers: {
+      const res = await fetch('/http://localhost:5000/api/questions/upload', { method: 'POST', headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`
       },body: formData });
       const contentType = res.headers.get('content-type');

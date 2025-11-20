@@ -11,8 +11,8 @@ const {
 const auth = require('../middleware/auth');
 const router = express.Router();
 
+// Public routes
 router.post('/register', register);
-
 router.post('/login', login);
 router.post('/forgot-password', requestResetPassword);
 router.post('/reset-password/:token', resetPassword);
@@ -40,10 +40,6 @@ router.get('/debug/admin', async (req, res) => {
     console.error('Debug error:', err);
     res.status(500).json({ msg: 'Server error' });
   }
-});
-
-router.get("/ping", (req, res) => {
-  res.send("✅ User router is active");
 });
 
 module.exports = router;

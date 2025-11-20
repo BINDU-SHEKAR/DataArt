@@ -41,7 +41,7 @@ ScoreMax
 Create a `.env` file in the root directory and add the following environment variables:
 
 ```
-PORT=5001
+PORT=5000
 MYSQL_URI=mysql://127.0.0.1:27017/mern-quiz-app
 JWT_SECRET=your_secret_key
 EMAIL_USER=your_email_id
@@ -93,6 +93,6 @@ FRONTEND_URL=http://localhost:3000
     npm run dev
     ```
 
-3. The server will start on the port specified in the `.env` file. Default is `5001`.
+3. The server will start on the port specified in the `.env` file. Default is `5000`.
 
 ---

@@ -4,7 +4,7 @@ function QuestionBank() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/question-bank')
+    fetch('http://localhost:5000/api/question-bank')
       .then(res => res.json())
       .then(data => setQuestions(data))
       .catch(err => console.error('Error fetching questions:', err));
@@ -41,13 +41,13 @@ function QuestionBank() {
   const [selectedSubject, setSelectedSubject] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/question-bank')
+    fetch('http://localhost:5000/api/question-bank')
       .then(res => res.json())
       .then(data => {
         setQuestions(data);
         const uniqueSubjects = [...new Set(data.map(q => q.subject))];
         setSubjects(uniqueSubjects);
-setFilteredQuestions([]); 
+setFilteredQuestions([]); // default: show nothing
       })
       .catch(err => console.error('Error fetching questions:', err));
   }, []);

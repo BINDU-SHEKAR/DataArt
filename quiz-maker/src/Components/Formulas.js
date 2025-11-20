@@ -4,7 +4,7 @@ function Formulas() {
   const [groupedFormulas, setGroupedFormulas] = useState({});
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/formulas')
+    fetch('http://localhost:5000/api/formulas')
       .then(res => res.json())
       .then(data => {
         // Group formulas by subject
@@ -59,7 +59,5 @@ function Formulas() {
     </div>
   );
 }
-
-
 
 export default Formulas;

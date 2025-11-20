@@ -1,5 +1,6 @@
 const z = require('zod');
 
+// ✅ Registration Schema (with role)
 const registrationSchema = z.object({
   username: z
     .string({
@@ -25,8 +26,13 @@ const registrationSchema = z.object({
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[\w\W]{6,}$/,
       'Password must contain at least 6 characters, including uppercase, lowercase characters and numbers'
     ),
+  role: z.enum(['student', 'admin'], {
+    required_error: 'Role is required',
+    invalid_type_error: 'Role must be either student or admin',
+  }),
 });
 
+// ✅ Login Schema
 const loginSchema = z.object({
   email: z
     .string({
@@ -38,6 +44,8 @@ const loginSchema = z.object({
   }),
 });
 
+
+// ✅ Update Username Schema
 const updateUsernameSchema = z.object({
   username: z
     .string({
@@ -47,6 +55,7 @@ const updateUsernameSchema = z.object({
     .max(255, 'Username should be of maximum 255 characters'),
 });
 
+// ✅ Update Password Schema
 const updatePasswordSchema = z.object({
   oldPassword: z.string({
     required_error: 'Old password is required',
@@ -66,6 +75,7 @@ const updatePasswordSchema = z.object({
     ),
 });
 
+// ✅ Request Password Reset Schema
 const requestPasswordResetSchema = z.object({
   email: z
     .string({
@@ -74,6 +84,7 @@ const requestPasswordResetSchema = z.object({
     .email('Invalid email address'),
 });
 
+// ✅ Question Schema
 const questionSchema = z.object({
   question: z.string({
     required_error: 'Question is required',
@@ -92,6 +103,7 @@ const questionSchema = z.object({
     .min(1, 'Correct answer is required'),
 });
 
+// ✅ Quiz Schema
 const quizSchema = z.object({
   title: z
     .string({
@@ -107,6 +119,7 @@ const quizSchema = z.object({
   }),
 });
 
+// ✅ Question Update Schema
 const questionUpdateSchema = z.object({
   question: z.string().optional(),
   options: z
@@ -116,12 +129,14 @@ const questionUpdateSchema = z.object({
   correctAnswer: z.string().optional(),
 });
 
+// ✅ Quiz Update Schema
 const quizUpdateSchema = z.object({
   title: z.string().optional(),
   questions: z.array(questionUpdateSchema).optional(),
   timeLimit: z.number().optional(),
 });
 
+// ✅ Export all schemas
 module.exports = {
   registrationSchema,
   loginSchema,

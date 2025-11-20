@@ -1,0 +1,399 @@
+subject,topic,questionText,options,correctAnswer
+Physics,Kinematics,What is the SI unit of velocity?,"[""m/s"",""km/h"",""cm/s"",""m""]",m/s
+Physics,Laws of Motion,Newton's First Law is also called?,"[""Law of Inertia"",""Law of Force"",""Law of Mass"",""Law of Gravity""]",Law of Inertia
+Physics,Gravitation,Value of g on Earth?,"[""9.8 m/s²"",""10 m/s²"",""8.9 m/s²"",""9 m/s²""]",9.8 m/s²
+Physics,Work & Energy,SI unit of work?,"[""Joule"",""Watt"",""Newton"",""Pascal""]",Joule
+Physics,Thermodynamics,Which law defines entropy?,"[""Zeroth"",""First"",""Second"",""Third""]",Second
+Physics,Optics,Mirror that converges light rays?,"[""Plane"",""Convex"",""Concave"",""None""]",Concave
+Physics,Electricity,Ohm’s law formula?,"[""V=IR"",""P=VI"",""I=V/R"",""R=V/I""]",V=IR
+Physics,Magnetism,Unit of magnetic field?,"[""Tesla"",""Weber"",""Henry"",""Farad""]",Tesla
+Physics,Waves,Speed of sound in air?,"[""343 m/s"",""300 m/s"",""400 m/s"",""500 m/s""]",343 m/s
+Physics,Nuclear,Which particle is neutral?,"[""Proton"",""Electron"",""Neutron"",""Photon""]",Neutron
+Physics,Motion,What is the acceleration of a body at rest?,"[""0 m/s²"",""9.8 m/s²"",""1 m/s²"",""Cannot be determined""]",0 m/s²
+Physics,Gravitation,Which planet has the highest gravitational pull?,"[""Earth"",""Mars"",""Jupiter"",""Venus""]",Jupiter
+Physics,Work & Energy,Work done is zero when?,"[""Force is zero"",""Displacement is zero"",""Angle is 90°"",""All of the above""]",All of the above
+Physics,Heat,Which thermometer uses mercury?,"[""Digital"",""Infrared"",""Clinical"",""Alcohol""]",Clinical
+Physics,Sound,Which wave is used in sonar?,"[""Light"",""Ultrasound"",""Infrared"",""Microwave""]",Ultrasound
+Physics,Optics,Focal length of a plane mirror is?,"[""0"",""Infinity"",""1"",""-1""]",Infinity
+Physics,Electricity,Resistance is measured in?,"[""Volt"",""Ampere"",""Ohm"",""Watt""]",Ohm
+Physics,Magnetism,Magnetic field lines always move from?,"[""North to South"",""South to North"",""East to West"",""West to East""]",North to South
+Physics,Modern Physics,Who discovered the photoelectric effect?,"[""Newton"",""Einstein"",""Bohr"",""Faraday""]",Einstein
+Physics,Nuclear Physics,Which radiation is most penetrating?,"[""Alpha"",""Beta"",""Gamma"",""Neutron""]",Gamma
+Physics,Kinematics,What does the slope of a velocity-time graph represent?,"[""Speed"",""Acceleration"",""Displacement"",""Force""]",Acceleration
+Physics,Laws of Motion,Which force opposes motion between surfaces?,"[""Gravitational"",""Friction"",""Normal"",""Tension""]",Friction
+Physics,Gravitation,Which quantity remains constant in free fall?,"[""Velocity"",""Acceleration"",""Mass"",""Weight""]",Acceleration
+Physics,Work & Energy,Power is defined as?,"[""Work/Time"",""Force×Distance"",""Energy×Time"",""Mass×Acceleration""]",Work/Time
+Physics,Heat,Which scale has no negative temperatures?,"[""Celsius"",""Fahrenheit"",""Kelvin"",""Rankine""]",Kelvin
+Physics,Sound,Which wave property changes in Doppler effect?,"[""Amplitude"",""Frequency"",""Wavelength"",""Speed""]",Frequency
+Physics,Optics,Which lens is used to correct myopia?,"[""Convex"",""Concave"",""Cylindrical"",""Plane""]",Concave
+Physics,Electricity,SI unit of electric charge?,"[""Ampere"",""Coulomb"",""Volt"",""Ohm""]",Coulomb
+Physics,Magnetism,Magnetic field inside a solenoid is?,"[""Uniform"",""Zero"",""Varying"",""Circular""]",Uniform
+Physics,Waves,Which wave requires a medium?,"[""Light"",""Radio"",""Sound"",""X-ray""]",Sound
+Physics,Nuclear Physics,Which particle initiates nuclear fission?,"[""Electron"",""Proton"",""Neutron"",""Photon""]",Neutron
+Physics,Modern Physics,Who proposed the quantum theory?,"[""Einstein"",""Planck"",""Bohr"",""Newton""]",Planck
+Physics,Thermodynamics,Heat transfer by radiation occurs in?,"[""Solids"",""Liquids"",""Gases"",""Vacuum""]",Vacuum
+Physics,Electrostatics,Unit of electric potential?,"[""Volt"",""Ampere"",""Coulomb"",""Ohm""]",Volt
+Physics,Current Electricity,Which device measures current?,"[""Voltmeter"",""Ammeter"",""Galvanometer"",""Multimeter""]",Ammeter
+Physics,Magnetism,Magnetic field around a straight conductor is?,"[""Circular"",""Linear"",""Zero"",""Elliptical""]",Circular
+Physics,Optics,Which color bends most in prism?,"[""Red"",""Green"",""Blue"",""Violet""]",Violet
+Physics,Waves,Which wave is longitudinal?,"[""Light"",""Sound"",""Microwave"",""X-ray""]",Sound
+Physics,Heat,Which process involves latent heat?,"[""Melting"",""Heating"",""Cooling"",""Expansion""]",Melting
+Physics,Gravitation,Which quantity is scalar?,"[""Force"",""Acceleration"",""Mass"",""Displacement""]",Mass
+hysics,Kinematics,Which quantity is always positive in motion?,"[""Displacement"",""Velocity"",""Speed"",""Acceleration""]",Speed
+Physics,Laws of Motion,Which law explains action and reaction forces?,"[""First"",""Second"",""Third"",""None""]",Third
+Physics,Gravitation,Gravitational force depends on?,"[""Mass only"",""Distance only"",""Both mass and distance"",""None""]",Both mass and distance
+Physics,Work & Energy,Which energy is stored in a stretched spring?,"[""Kinetic"",""Potential"",""Thermal"",""Chemical""]",Potential
+Physics,Heat,Which method of heat transfer occurs in solids?,"[""Conduction"",""Convection"",""Radiation"",""Evaporation""]",Conduction
+Physics,Sound,Which wave property determines pitch?,"[""Amplitude"",""Frequency"",""Wavelength"",""Speed""]",Frequency
+Physics,Optics,Which mirror is used in rear-view mirrors?,"[""Plane"",""Concave"",""Convex"",""None""]",Convex
+Physics,Electricity,Which material is a good conductor?,"[""Rubber"",""Glass"",""Copper"",""Plastic""]",Copper
+Physics,Magnetism,Magnetic field strength is measured in?,"[""Tesla"",""Weber"",""Ampere"",""Volt""]",Tesla
+Physics,Waves,Which wave travels fastest in vacuum?,"[""Sound"",""Light"",""Water"",""Seismic""]",Light
+Physics,Nuclear Physics,Which reaction powers the sun?,"[""Fission"",""Fusion"",""Decay"",""Combustion""]",Fusion
+Physics,Modern Physics,Which scientist developed atomic model with orbits?,"[""Rutherford"",""Bohr"",""Thomson"",""Einstein""]",Bohr
+Physics,Thermodynamics,Which law states energy conservation?,"[""First"",""Second"",""Third"",""Zeroth""]",First
+Physics,Electrostatics,Which particle carries negative charge?,"[""Proton"",""Electron"",""Neutron"",""Photon""]",Electron
+Physics,Current Electricity,Which quantity is scalar?,"[""Current"",""Voltage"",""Resistance"",""Power""]",Resistance
+Physics,Magnetism,Which material is strongly magnetic?,"[""Copper"",""Iron"",""Aluminum"",""Wood""]",Iron
+Physics,Optics,Which lens is used in magnifying glass?,"[""Concave"",""Convex"",""Plane"",""Cylindrical""]",Convex
+Physics,Waves,Which wave is transverse?,"[""Sound"",""Water"",""Light"",""Seismic""]",Light
+Physics,Heat,Which device measures temperature?,"[""Barometer"",""Thermometer"",""Hygrometer"",""Anemometer""]",Thermometer
+Physics,Gravitation,Which force keeps planets in orbit?,"[""Magnetic"",""Gravitational"",""Electrostatic"",""Nuclear""]",Gravitational
+Physics,Kinematics,What is the area under a velocity-time graph?,"[""Displacement"",""Acceleration"",""Speed"",""Force""]",Displacement
+Physics,Laws of Motion,Which force acts opposite to motion in fluids?,"[""Friction"",""Drag"",""Buoyant"",""Tension""]",Drag
+Physics,Gravitation,Which quantity is constant for all objects in free fall?,"[""Mass"",""Weight"",""Acceleration"",""Velocity""]",Acceleration
+Physics,Work & Energy,Which energy is associated with motion?,"[""Potential"",""Kinetic"",""Thermal"",""Chemical""]",Kinetic
+Physics,Heat,Which device measures heat flow?,"[""Thermometer"",""Calorimeter"",""Barometer"",""Hygrometer""]",Calorimeter
+Physics,Sound,Which wave property affects loudness?,"[""Frequency"",""Amplitude"",""Speed"",""Wavelength""]",Amplitude
+Physics,Optics,Which lens diverges light rays?,"[""Convex"",""Concave"",""Plane"",""Cylindrical""]",Concave
+Physics,Electricity,Which quantity is measured in volts?,"[""Current"",""Resistance"",""Charge"",""Potential""]",Potential
+Physics,Magnetism,Which rule determines direction of magnetic field?,"[""Right-hand rule"",""Left-hand rule"",""Ampere's law"",""Faraday's law""]",Right-hand rule
+Physics,Waves,Which wave travels fastest in solids?,"[""Sound"",""Light"",""Water"",""Seismic""]",Sound
+Physics,Nuclear Physics,Which radiation has the least mass?,"[""Alpha"",""Beta"",""Gamma"",""Neutron""]",Gamma
+Physics,Modern Physics,Which scientist introduced wave-particle duality?,"[""Einstein"",""Planck"",""Bohr"",""de Broglie""]",de Broglie
+Physics,Thermodynamics,Which process increases entropy?,"[""Freezing"",""Condensation"",""Melting"",""Compression""]",Melting
+Physics,Electrostatics,Which law relates force to charge and distance?,"[""Ohm's law"",""Coulomb's law"",""Faraday's law"",""Ampere's law""]",Coulomb's law
+Physics,Current Electricity,Which device controls current in a circuit?,"[""Resistor"",""Capacitor"",""Inductor"",""Transformer""]",Resistor
+Physics,Magnetism,Which material is non-magnetic?,"[""Iron"",""Nickel"",""Copper"",""Cobalt""]",Copper
+Physics,Optics,Which phenomenon explains rainbow formation?,"[""Reflection"",""Refraction"",""Dispersion"",""Diffraction""]",Dispersion
+Physics,Waves,Which wave property changes with medium?,"[""Frequency"",""Amplitude"",""Speed"",""Phase""]",Speed
+Physics,Heat,Which law relates heat and temperature change?,"[""Boyle's law"",""Newton's law"",""Joule's law"",""Charles's law""]",Joule's law
+Physics,Kinematics,Which graph shows uniform acceleration?,"[""Straight line"",""Parabola"",""Hyperbola"",""Circle""]",Straight line
+Physics,Laws of Motion,Which force is responsible for circular motion?,"[""Gravitational"",""Centripetal"",""Friction"",""Tension""]",Centripetal
+Physics,Gravitation,Which quantity decreases with altitude?,"[""Mass"",""Weight"",""Acceleration due to gravity"",""Force""]",Acceleration due to gravity
+Physics,Work & Energy,Which energy conversion occurs in a hydroelectric plant?,"[""Kinetic to thermal"",""Potential to electrical"",""Chemical to mechanical"",""Thermal to sound""]",Potential to electrical
+Physics,Heat,Which law relates pressure and temperature?,"[""Boyle's law"",""Charles's law"",""Gay-Lussac's law"",""Newton's law""]",Gay-Lussac's law
+Physics,Sound,Which wave property is used in musical tuning?,"[""Amplitude"",""Frequency"",""Speed"",""Phase""]",Frequency
+Physics,Optics,Which phenomenon causes twinkling of stars?,"[""Reflection"",""Refraction"",""Scattering"",""Diffraction""]",Refraction
+Physics,Electricity,Which device stores charge?,"[""Resistor"",""Capacitor"",""Inductor"",""Transformer""]",Capacitor
+Physics,Magnetism,Magnetic field inside a bar magnet flows from?,"[""North to South"",""South to North"",""Center to edge"",""Edge to center""]",South to North
+Physics,Waves,Which wave travels through vacuum?,"[""Sound"",""Water"",""Light"",""Seismic""]",Light
+Physics,Nuclear Physics,Which radiation is used in cancer treatment?,"[""Alpha"",""Beta"",""Gamma"",""Neutron""]",Gamma
+Physics,Modern Physics,Which scientist proposed uncertainty principle?,"[""Bohr"",""Heisenberg"",""Einstein"",""Planck""]",Heisenberg
+Physics,Thermodynamics,Which process is isothermal?,"[""Constant pressure"",""Constant volume"",""Constant temperature"",""Constant entropy""]",Constant temperature
+Physics,Electrostatics,Which quantity is scalar?,"[""Electric field"",""Electric potential"",""Force"",""Charge""]",Electric potential
+Physics,Current Electricity,Which device converts AC to DC?,"[""Transformer"",""Rectifier"",""Capacitor"",""Inductor""]",Rectifier
+Physics,Magnetism,Which rule predicts direction of induced current?,"[""Lenz's law"",""Faraday's law"",""Ampere's law"",""Ohm's law""]",Lenz's law
+Physics,Optics,Which phenomenon explains blue sky?,"[""Reflection"",""Refraction"",""Scattering"",""Dispersion""]",Scattering
+Physics,Waves,Which wave property remains unchanged in refraction?,"[""Speed"",""Wavelength"",""Frequency"",""Amplitude""]",Frequency
+Physics,Heat,Which process occurs at constant temperature?,"[""Melting"",""Heating"",""Cooling"",""Expansion""]",Melting
+Chemistry,Solutions,Which unit is used for solubility?,"[""mol/L"",""g/L"",""ppm"",""mol/kg""]",g/L
+Chemistry,Electrochemistry,Which electrode is used in a Daniel cell?,"[""Copper"",""Zinc"",""Silver"",""Iron""]",Copper
+Chemistry,Chemical Kinetics,Rate of reaction depends on?,"[""Temperature"",""Concentration"",""Catalyst"",""All of the above""]",All of the above
+Chemistry,Surface Chemistry,Which phenomenon is used in catalysis?,"[""Adsorption"",""Absorption"",""Diffusion"",""Evaporation""]",Adsorption
+Chemistry,Coordination Compounds,Which ion is central in [Cu(NH₃)₄]²⁺?,"[""Cu²⁺"",""NH₃"",""H⁺"",""OH⁻""]",Cu²⁺
+Chemistry,Organic Chemistry,Which compound is an alcohol?,"[""CH₃OH"",""CH₄"",""C₂H₆"",""C₂H₄""]",CH₃OH
+Chemistry,Polymers,Which polymer is used in non-stick cookware?,"[""PVC"",""Teflon"",""Nylon"",""Polystyrene""]",Teflon
+Chemistry,Biomolecules,Which biomolecule contains nitrogen?,"[""Carbohydrates"",""Lipids"",""Proteins"",""Fats""]",Proteins
+Chemistry,Chemistry in Everyday Life,Which drug relieves pain?,"[""Antibiotic"",""Analgesic"",""Antiseptic"",""Antacid""]",Analgesic
+Chemistry,Periodic Classification,Which element is in group 17?,"[""Oxygen"",""Nitrogen"",""Fluorine"",""Carbon""]",Fluorine
+Chemistry,Structure of Atom,Which particle has no charge?,"[""Proton"",""Electron"",""Neutron"",""Positron""]",Neutron
+Chemistry,Thermodynamics,Which process is exothermic?,"[""Melting"",""Freezing"",""Evaporation"",""Boiling""]",Freezing
+Chemistry,Redox Reactions,Which species is oxidized in Zn + Cu²⁺ → Zn²⁺ + Cu?,"[""Zn"",""Cu²⁺"",""Zn²⁺"",""Cu""]",Zn
+Chemistry,Hydrocarbons,Which hydrocarbon has a triple bond?,"[""Ethane"",""Ethene"",""Ethyne"",""Propane""]",Ethyne
+Chemistry,Environmental Chemistry,Which gas depletes ozone layer?,"[""CO₂"",""CH₄"",""CFCs"",""NO₂""]",CFCs
+Chemistry,Chemical Bonding,Which bond is weakest?,"[""Ionic"",""Covalent"",""Hydrogen"",""Metallic""]",Hydrogen
+Chemistry,States of Matter,Which property is affected by temperature?,"[""Pressure"",""Volume"",""Density"",""All of the above""]",All of the above
+Chemistry,Solutions,Which solution has pH < 7?,"[""Neutral"",""Acidic"",""Basic"",""Salt""]",Acidic
+Chemistry,Electrochemistry,Which device converts chemical energy to electrical?,"[""Battery"",""Bulb"",""Switch"",""Resistor""]",Battery
+Chemistry,Chemical Kinetics,Catalyst increases?,"[""Activation energy"",""Rate of reaction"",""Equilibrium"",""Product""]",Rate of reaction
+Chemistry,Solutions,Which solution conducts electricity?,"[""Sugar solution"",""Salt solution"",""Alcohol"",""Distilled water""]",Salt solution
+Chemistry,Electrochemistry,Which ion moves toward cathode?,"[""Positive"",""Negative"",""Neutral"",""All""]",Positive
+Chemistry,Chemical Kinetics,Which factor does not affect rate of reaction?,"[""Temperature"",""Catalyst"",""Color"",""Concentration""]",Color
+Chemistry,Surface Chemistry,Which process uses adsorption?,"[""Chromatography"",""Filtration"",""Distillation"",""Evaporation""]",Chromatography
+Chemistry,Coordination Compounds,Which compound is a ligand?,"[""NH₃"",""Na⁺"",""Cl⁻"",""H₂O""]",NH₃
+Chemistry,Organic Chemistry,Which compound is aromatic?,"[""Ethane"",""Benzene"",""Propane"",""Butane""]",Benzene
+Chemistry,Polymers,Which polymer is biodegradable?,"[""Polyethylene"",""Polystyrene"",""PHB"",""PVC""]",PHB
+Chemistry,Biomolecules,Which sugar is found in RNA?,"[""Glucose"",""Fructose"",""Ribose"",""Deoxyribose""]",Ribose
+Chemistry,Chemistry in Everyday Life,Which compound is used in antiseptics?,"[""Phenol"",""Methanol"",""Ethanol"",""Acetone""]",Phenol
+Chemistry,Periodic Classification,Which element is a noble gas?,"[""Oxygen"",""Nitrogen"",""Helium"",""Hydrogen""]",Helium
+Chemistry,Structure of Atom,Which quantum number defines shape of orbital?,"[""Principal"",""Azimuthal"",""Magnetic"",""Spin""]",Azimuthal
+Chemistry,Thermodynamics,Which process has ΔH < 0?,"[""Endothermic"",""Exothermic"",""Isothermal"",""Adiabatic""]",Exothermic
+Chemistry,Redox Reactions,Which species is reduced in Cu²⁺ + Zn → Cu + Zn²⁺?,"[""Cu²⁺"",""Zn"",""Cu"",""Zn²⁺""]",Cu²⁺
+Chemistry,Hydrocarbons,Which hydrocarbon is unsaturated?,"[""Ethane"",""Ethene"",""Propane"",""Butane""]",Ethene
+Chemistry,Environmental Chemistry,Which pollutant causes smog?,"[""CO"",""NO₂"",""SO₂"",""O₃""]",NO₂
+Chemistry,Chemical Bonding,Which bond is present in NaCl?,"[""Covalent"",""Ionic"",""Hydrogen"",""Metallic""]",Ionic
+Chemistry,States of Matter,Which property is used in gas laws?,"[""Mass"",""Volume"",""Color"",""Shape""]",Volume
+Chemistry,Solutions,Which solution is basic?,"[""NaOH"",""HCl"",""CH₃COOH"",""H₂SO₄""]",NaOH
+Chemistry,Electrochemistry,Which cell is rechargeable?,"[""Dry cell"",""Lead-acid"",""Daniel cell"",""Fuel cell""]",Lead-acid
+Chemistry,Chemical Kinetics,Which graph shows zero-order reaction?,"[""Straight line"",""Curve"",""Parabola"",""Hyperbola""]",Straight line
+Chemistry,Solutions,Which solution has pH > 7?,"[""Acidic"",""Neutral"",""Basic"",""Salt""]",Basic
+Chemistry,Electrochemistry,Which electrode is inert?,"[""Copper"",""Platinum"",""Zinc"",""Iron""]",Platinum
+Chemistry,Chemical Kinetics,Which reaction is fastest?,"[""Combustion"",""Rusting"",""Photosynthesis"",""Fermentation""]",Combustion
+Chemistry,Surface Chemistry,Which catalyst is used in Haber process?,"[""Iron"",""Nickel"",""Copper"",""Platinum""]",Iron
+Chemistry,Coordination Compounds,Which compound shows coordination number 6?,"[""[Fe(CN)₆]³⁻"",""[Cu(NH₃)₄]²⁺"",""[Ag(NH₃)₂]⁺"",""[Zn(OH)₄]²⁻""]",[Fe(CN)₆]³⁻
+Chemistry,Organic Chemistry,Which compound is a ketone?,"[""CH₃CHO"",""CH₃COCH₃"",""CH₃OH"",""CH₄""]",CH₃COCH₃
+Chemistry,Polymers,Which polymer is formed by addition reaction?,"[""Nylon"",""Teflon"",""Bakelite"",""Polyester""]",Teflon
+Chemistry,Biomolecules,Which vitamin is water-soluble?,"[""A"",""D"",""C"",""E""]",C
+Chemistry,Chemistry in Everyday Life,Which compound is used in antacids?,"[""NaOH"",""Mg(OH)₂"",""HCl"",""CH₃COOH""]",Mg(OH)₂
+Chemistry,Periodic Classification,Which element is most reactive in group 1?,"[""Li"",""Na"",""K"",""Rb""]",Rb
+Chemistry,Structure of Atom,Which quantum number defines size of orbital?,"[""Principal"",""Azimuthal"",""Magnetic"",""Spin""]",Principal
+Chemistry,Thermodynamics,Which process has ΔG < 0?,"[""Non-spontaneous"",""Spontaneous"",""Equilibrium"",""Endothermic""]",Spontaneous
+Chemistry,Redox Reactions,Which reaction is redox?,"[""Na + Cl → NaCl"",""HCl + NaOH → NaCl + H₂O"",""AgNO₃ + NaCl → AgCl + NaNO₃"",""None""]",Na + Cl → NaCl
+Chemistry,Hydrocarbons,Which hydrocarbon is aromatic?,"[""Ethene"",""Propane"",""Benzene"",""Butane""]",Benzene
+Chemistry,Environmental Chemistry,Which pollutant causes greenhouse effect?,"[""CO₂"",""SO₂"",""NO₂"",""O₃""]",CO₂
+Chemistry,Chemical Bonding,Which bond is directional?,"[""Ionic"",""Covalent"",""Metallic"",""Hydrogen""]",Covalent
+Chemistry,States of Matter,Which gas law relates volume and temperature?,"[""Boyle's law"",""Charles's law"",""Avogadro's law"",""Dalton's law""]",Charles's law
+Chemistry,Solutions,Which solution is neutral?,"[""NaOH"",""HCl"",""CH₃COOH"",""NaCl""]",NaCl
+Chemistry,Electrochemistry,Which cell uses salt bridge?,"[""Dry cell"",""Daniel cell"",""Lead-acid"",""Fuel cell""]",Daniel cell
+Chemistry,Chemical Kinetics,Which order reaction has constant rate?,"[""Zero"",""First"",""Second"",""Third""]",Zero
+Chemistry,Solutions,Which property defines colligative effect?,"[""Nature of solute"",""Concentration"",""Molar mass"",""Number of particles""]",Number of particles
+Chemistry,Electrochemistry,Which reaction occurs at anode?,"[""Oxidation"",""Reduction"",""Neutralization"",""Precipitation""]",Oxidation
+Chemistry,Chemical Kinetics,Which unit is used for rate constant of first-order reaction?,"[""mol/L·s"",""s⁻¹"",""mol/s"",""L/mol·s""]",s⁻¹
+Chemistry,Surface Chemistry,Which catalyst is used in hydrogenation?,"[""Platinum"",""Nickel"",""Copper"",""Iron""]",Nickel
+Chemistry,Coordination Compounds,Which compound shows chelation?,"[""EDTA"",""NH₃"",""Cl⁻"",""H₂O""]",EDTA
+Chemistry,Organic Chemistry,Which compound is a carboxylic acid?,"[""CH₃COOH"",""CH₄"",""CH₃OH"",""CH₃CHO""]",CH₃COOH
+Chemistry,Polymers,Which polymer is used in textile industry?,"[""Polyester"",""PVC"",""Teflon"",""Polystyrene""]",Polyester
+Chemistry,Biomolecules,Which biomolecule is enzyme?,"[""Protein"",""Carbohydrate"",""Lipid"",""Vitamin""]",Protein
+Chemistry,Chemistry in Everyday Life,Which compound is used in cold medicine?,"[""Paracetamol"",""Aspirin"",""Ibuprofen"",""Antacid""]",Paracetamol
+Chemistry,Periodic Classification,Which element has smallest atomic radius?,"[""Li"",""Be"",""B"",""F""]",F
+Chemistry,Structure of Atom,Which particle determines atomic number?,"[""Proton"",""Electron"",""Neutron"",""Nucleon""]",Proton
+Chemistry,Thermodynamics,Which function is state function?,"[""Work"",""Heat"",""Enthalpy"",""Path""]",Enthalpy
+Chemistry,Redox Reactions,Which species is reducing agent?,"[""Electron acceptor"",""Electron donor"",""Oxidized species"",""Neutral species""]",Electron donor
+Chemistry,Hydrocarbons,Which compound is alkyne?,"[""C₂H₂"",""C₂H₄"",""C₂H₆"",""CH₄""]",C₂H₂
+Chemistry,Environmental Chemistry,Which compound causes eutrophication?,"[""Nitrates"",""Sulphates"",""Carbonates"",""Chlorides""]",Nitrates
+Chemistry,Chemical Bonding,Which bond is present in diamond?,"[""Ionic"",""Covalent"",""Metallic"",""Hydrogen""]",Covalent
+Chemistry,States of Matter,Which property is used in diffusion?,"[""Mass"",""Volume"",""Density"",""Molecular weight""]",Molecular weight
+Chemistry,Solutions,Which solution shows Tyndall effect?,"[""True solution"",""Colloid"",""Suspension"",""None""]",Colloid
+Chemistry,Electrochemistry,Which cell has liquid electrolyte?,"[""Dry cell"",""Lead-acid"",""Fuel cell"",""Daniel cell""]",Lead-acid
+Chemistry,Chemical Kinetics,Which reaction has half-life independent of concentration?,"[""Zero-order"",""First-order"",""Second-order"",""Third-order""]",First-order
+Chemistry,Solutions,Which property lowers freezing point?,"[""Boiling point"",""Vapor pressure"",""Colligative property"",""Surface tension""]",Colligative property
+Chemistry,Electrochemistry,Which cell uses hydrogen and oxygen?,"[""Dry cell"",""Lead-acid"",""Fuel cell"",""Daniel cell""]",Fuel cell
+Chemistry,Chemical Kinetics,Which factor increases rate of reaction?,"[""Lower temperature"",""Dilution"",""Catalyst"",""Inert gas""]",Catalyst
+Chemistry,Surface Chemistry,Which process uses surface tension?,"[""Capillary action"",""Evaporation"",""Boiling"",""Freezing""]",Capillary action
+Chemistry,Coordination Compounds,Which compound is a complex salt?,"[""K₄[Fe(CN)₆]"",""NaCl"",""KNO₃"",""CaCO₃""]",K₄[Fe(CN)₆]
+Chemistry,Organic Chemistry,Which compound is an aldehyde?,"[""CH₃CHO"",""CH₃COCH₃"",""CH₃OH"",""CH₄""]",CH₃CHO
+Chemistry,Polymers,Which polymer is thermosetting?,"[""Bakelite"",""Polyethylene"",""Nylon"",""Teflon""]",Bakelite
+Chemistry,Biomolecules,Which biomolecule stores genetic information?,"[""Protein"",""DNA"",""Lipid"",""Vitamin""]",DNA
+Chemistry,Chemistry in Everyday Life,Which compound is used in toothpaste?,"[""NaCl"",""NaF"",""NaOH"",""Na₂CO₃""]",NaF
+Chemistry,Periodic Classification,Which element is most metallic?,"[""Na"",""Mg"",""Al"",""K""]",K
+Chemistry,Solutions,Which property is used to calculate osmotic pressure?,"[""Volume"",""Concentration"",""Temperature"",""Molarity""]",Molarity
+Chemistry,Electrochemistry,Which ion is discharged at cathode in electrolysis of NaCl?,"[""Na⁺"",""Cl⁻"",""H⁺"",""OH⁻""]",H⁺
+Chemistry,Chemical Kinetics,Which reaction has rate proportional to square of concentration?,"[""Zero-order"",""First-order"",""Second-order"",""Third-order""]",Second-order
+Chemistry,Surface Chemistry,Which process uses activated charcoal?,"[""Filtration"",""Adsorption"",""Distillation"",""Evaporation""]",Adsorption
+Chemistry,Coordination Compounds,Which compound shows tetrahedral geometry?,"[""[Ni(CN)₄]²⁻"",""[Cu(NH₃)₄]²⁺"",""[Zn(OH)₄]²⁻"",""[Fe(CN)₆]³⁻""]",[Zn(OH)₄]²⁻
+Chemistry,Organic Chemistry,Which compound is an ether?,"[""CH₃CH₂OH"",""CH₃OCH₃"",""CH₃COOH"",""CH₄""]",CH₃OCH₃
+Chemistry,Polymers,Which polymer is formed from phenol and formaldehyde?,"[""Bakelite"",""Teflon"",""Nylon"",""Polyester""]",Bakelite
+Chemistry,Biomolecules,Which biomolecule is a structural component of cell membrane?,"[""Protein"",""Lipid"",""Carbohydrate"",""Vitamin""]",Lipid
+Chemistry,Chemistry in Everyday Life,Which compound is used in sunscreen?,"[""Zinc oxide"",""Calcium carbonate"",""Sodium chloride"",""Magnesium hydroxide""]",Zinc oxide
+Chemistry,Periodic Classification,Which element has highest ionization energy?,"[""Fluorine"",""Neon"",""Helium"",""Oxygen""]",Helium
+Math,Sets,"What is the cardinality of set A = {2, 4, 6, 8}?","[""2"",""3"",""4"",""5""]",4
+Math,Relations & Functions,Domain of f(x) = 1/(x−2)?,"[""x ≠ 2"",""x = 2"",""x > 2"",""x < 2""]",x ≠ 2
+Math,Trigonometry,Value of sin 90° is?,"[""0"",""1"",""√2"",""Undefined""]",1
+Math,Matrices,Order of a 3×2 matrix is?,"[""2×3"",""3×2"",""1×6"",""6×1""]",3×2
+Math,Determinants,Value of determinant of identity matrix of order 2?,"[""0"",""1"",""2"",""−1""]",1
+Math,Limits,limₓ→0 (sin x)/x = ?,"[""0"",""1"",""∞"",""Undefined""]",1
+Math,Differentiation,Derivative of x² is?,"[""2x"",""x"",""x²"",""1""]",2x
+Math,Integration,∫x dx = ?,"[""x²"",""x²/2"",""2x"",""ln x""]",x²/2
+Math,Probability,Probability of getting head in a coin toss?,"[""0"",""1"",""1/2"",""2""]",1/2/2025
+Math,Statistics,"Mean of 2, 4, 6, 8?","[""4"",""5"",""6"",""7""]",5
+Math,Sets,"If A = {1,2}, B = {2,3}, then A ∪ B = ?","[""{1,2,3}"",""{2}"",""{1,2}"",""{1,2,3,4}""]","{1,2,3}"
+Math,Relations & Functions,"Range of f(x) = x² for x ∈ [−2,2]?","[""[−4,4]"",""[0,4]"",""[−2,2]"",""[1,4]""]","[0,4]"
+Math,Trigonometry,Value of cos 0° is?,"[""0"",""1"",""−1"",""Undefined""]",1
+Math,Matrices,Which matrix is symmetric?,"[""A = [[1,2],[2,1]]"",""A = [[1,0],[2,3]]"",""A = [[0,1],[1,0]]"",""None""]","A = [[1,2],[2,1]]"
+Math,Determinants,"If det(A) = 0, then matrix A is?","[""Invertible"",""Singular"",""Orthogonal"",""Unit""]",Singular
+Math,Limits,limₓ→∞ (1/x) = ?,"[""0"",""1"",""∞"",""Undefined""]",0
+Math,Differentiation,Derivative of sin x is?,"[""cos x"",""−cos x"",""−sin x"",""tan x""]",cos x
+Math,Integration,∫cos x dx = ?,"[""sin x"",""−sin x"",""cos x"",""tan x""]",sin x
+Math,Probability,Probability of getting 2 on a die?,"[""1/6"",""1/2"",""1/3"",""1/4""]",1/6/2025
+Math,Statistics,"Median of 3, 5, 7 is?","[""3"",""5"",""7"",""6""]",5
+Math,Vectors,Magnitude of vector i + j is?,"[""1"",""√2"",""2"",""0""]",√2
+Math,3D Geometry,"Distance between points (0,0,0) and (1,1,1)?","[""1"",""√2"",""√3"",""2""]",√3
+Math,Linear Programming,Objective function in LPP is?,"[""Constraint"",""Equation"",""Inequality"",""Max/Min expression""]",Max/Min expression
+Math,Complex Numbers,i² = ?,"[""1"",""−1"",""i"",""0""]",−1
+Math,Conic Sections,"Equation of circle with center (0,0) and radius r?","[""x² + y² = r²"",""x² − y² = r²"",""x² + y² = 2r"",""x² + y² = r""]",x² + y² = r²
+Math,Sets,Complement of universal set is?,"[""Empty set"",""Universal set"",""Subset"",""None""]",Empty set
+Math,Relations & Functions,f(x) = x³ is?,"[""Even"",""Odd"",""Neither"",""Constant""]",Odd
+Math,Trigonometry,tan 45° = ?,"[""0"",""1"",""√3"",""Undefined""]",1
+Math,Matrices,Identity matrix has?,"[""All zeros"",""All ones"",""Diagonal ones"",""Random values""]",Diagonal ones
+Math,Determinants,"Value of det([[2,0],[0,2]])?","[""2"",""4"",""0"",""1""]",4
+Math,Limits,limₓ→0 (1 − cos x)/x² = ?,"[""0"",""1"",""∞"",""1/2""]",1/2/2025
+Math,Differentiation,Derivative of ln x is?,"[""1/x"",""x"",""ln x"",""x ln x""]",1/x
+Math,Integration,∫eˣ dx = ?,"[""eˣ"",""eˣ + C"",""x·eˣ"",""ln x""]",eˣ + C
+Math,Probability,Probability of drawing a red card from a deck?,"[""1/2"",""1/4"",""1/13"",""1/26""]",1/2/2025
+Math,Statistics,"Mode of 2, 3, 3, 4, 5?","[""2"",""3"",""4"",""5""]",3
+Math,Vectors,Dot product of i and j is?,"[""0"",""1"",""i·j"",""Undefined""]",0
+Math,3D Geometry,Direction cosines of x-axis?,"[""(1,0,0)"",""(0,1,0)"",""(0,0,1)"",""(1,1,1)""]","(1,0,0)"
+Math,Linear Programming,Constraints in LPP are?,"[""Equations"",""Inequalities"",""Functions"",""Matrices""]",Inequalities
+Math,Complex Numbers,Conjugate of 3 + 2i is?,"[""3 − 2i"",""−3 + 2i"",""3 + 2i"",""−3 − 2i""]",3 − 2i
+Math,Conic Sections,Equation of parabola with vertex at origin?,"[""y² = 4ax"",""x² = 4ay"",""x² + y² = r²"",""x² − y² = 1""]",y² = 4ax
+Math,Sets,A ∩ ∅ = ?,"[""A"",""∅"",""Universal set"",""None""]",∅
+Math,Relations & Functions,f(x) =x is?,"[""Even"",""Odd"",""Neither"",""Constant""]",Even
+Math,Trigonometry,sec² x − tan² x = ?,"[""1"",""0"",""sin² x"",""cos² x""]",1
+Math,Matrices,Which matrix has no inverse?,"[""Singular"",""Non-singular"",""Identity"",""Diagonal""]",Singular
+Math,Determinants,"Value of det([[1,2],[3,4]])?","[""−2"",""2"",""10"",""−10""]",−2
+Math,Limits,limₓ→0 tan x/x = ?,"[""0"",""1"",""∞"",""Undefined""]",1
+Math,Differentiation,Derivative of tan x is?,"[""sec² x"",""cot x"",""−cosec² x"",""1""]",sec² x
+Math,Integration,∫1/x dx = ?,"[""x"",""ln x"",""1/x"",""x ln x""]",ln x
+Math,Probability,Probability of getting an even number on a die?,"[""1/2"",""1/3"",""2/3"",""1/6""]",1/2/2025
+Math,Statistics,"Range of 2, 4, 6, 10?","[""8"",""6"",""4"",""2""]",8
+Math,Vectors,Cross product of i and j is?,"[""k"",""−k"",""0"",""i""]",k
+Math,3D Geometry,Equation of x-axis in 3D is?,"[""y = z = 0"",""x = y = 0"",""x = z = 0"",""x = y = z""]",y = z = 0
+Math,Linear Programming,Feasible region is?,"[""Any area"",""Solution set"",""Intersection of constraints"",""None""]",Intersection of constraints
+Math,Complex Numbers,for z = 3 + 4i is?,"[""5"",""7"",""1"",""√2""]",5
+Math,Conic Sections,Eccentricity of a circle is?,"[""0"",""1"","">1"",""<1""]",0
+Math,Sets,A − A = ?,"[""A"",""∅"",""Universal set"",""None""]",∅
+Math,Relations & Functions,f(x) = constant is?,"[""One-one"",""Many-one"",""Onto"",""Bijective""]",Many-one
+Math,Trigonometry,sin² x + cos² x = ?,"[""0"",""1"",""2"",""Undefined""]",1
+Math,Matrices,"Transpose of [[1,2],[3,4]] is?","[""[[1,3],[2,4]]"",""[[1,2],[3,4]]"",""[[4,3],[2,1]]"",""[[2,1],[4,3]]""]","[[1,3],[2,4]]"
+Math,Determinants,"If det(A) = 5, then det(2A) for 2×2 matrix is?","[""10"",""20"",""25"",""40""]",20
+Math,Limits,limₓ→0 (tan x − sin x)/x³ = ?,"[""0"",""1"",""1/2"",""1/6""]",1/6/2025
+Math,Differentiation,d/dx (eˣ·sin x) = ?,"[""eˣ(sin x + cos x)"",""eˣ(sin x − cos x)"",""eˣ"",""sin x + cos x""]",eˣ(sin x + cos x)
+Math,Integration,∫sec² x dx = ?,"[""tan x"",""sec x"",""cot x"",""cosec x""]",tan x
+Math,Probability,Probability of getting a king from deck?,"[""1/13"",""1/4"",""1/52"",""4/13""]",1/13/2025
+Math,Statistics,"If mean = 10, sum of 5 values is?","[""50"",""10"",""5"",""15""]",50
+Math,Vectors,Unit vector in direction of i + j is?,"[""(1/√2)(i + j)"",""(1/2)(i + j)"",""(i + j)"",""(i − j)""]",(1/√2)(i + j)
+Math,3D Geometry,"Distance between (1,2,3) and (4,6,3)?","[""5"",""√25"",""√20"",""10""]",5
+Math,Linear Programming,LPP is used to?,"[""Solve equations"",""Maximize/minimize objective"",""Find roots"",""Draw graphs""]",Maximize/minimize objective
+Math,Complex Numbers,Argument of 1 + i is?,"[""π/4"",""π/2"",""π"",""0""]",π/4
+Math,Conic Sections,Equation of ellipse is?,"[""x²/a² + y²/b² = 1"",""x² − y² = 1"",""x² + y² = r²"",""x² = 4ay""]",x²/a² + y²/b² = 1
+Math,Sets,"Power set of {a, b} has how many elements?","[""2"",""3"",""4"",""5""]",4
+Math,Relations & Functions,"If f(x) = x², then f(−3) = ?","[""9"",""−9"",""6"",""−6""]",9
+Math,Trigonometry,Value of sin 30° is?,"[""1"",""1/2"",""√3/2"",""0""]",1/2/2025
+Math,Matrices,Which matrix is diagonal?,"[""[[1,0],[0,2]]"",""[[1,2],[3,4]]"",""[[0,1],[1,0]]"",""[[2,2],[2,2]]""]","[[1,0],[0,2]]"
+Math,Determinants,"If det(A) = 3, then det(A⁻¹) = ?","[""1/3"",""3"",""−3"",""0""]",1/3/2025
+Math,Limits,limₓ→0 (x² + 2x)/x = ?,"[""0"",""2"",""∞"",""Undefined""]",2
+Math,Differentiation,Derivative of cos x is?,"[""−sin x"",""sin x"",""cos x"",""−cos x""]",−sin x
+Math,Integration,∫x² dx = ?,"[""x³/3"",""x²/2"",""2x"",""x³""]",x³/3
+Math,Probability,Probability of drawing a queen from deck?,"[""1/13"",""1/4"",""1/52"",""4/52""]",1/13/2025
+Math,Statistics,"If median = 6, then middle value in ordered set is?","[""6"",""5"",""7"",""8""]",6
+Math,Vectors,Angle between i and j is?,"[""0°"",""90°"",""180°"",""45°""]",90°
+Math,3D Geometry,Equation of yz-plane is?,"[""x = 0"",""y = 0"",""z = 0"",""x + y + z = 0""]",x = 0
+Math,Linear Programming,Graphical method solves LPP with how many variables?,"[""1"",""2"",""3"",""4""]",2
+Math,Complex Numbers,"If z = 2 − 3i, then Re(z) = ?","[""2"",""−3"",""3"",""0""]",2
+Math,Conic Sections,Hyperbola has how many foci?,"[""1"",""2"",""3"",""0""]",2
+Math,Sets,"If A ⊆ B and B ⊆ A, then?","[""A = B"",""A ⊂ B"",""B ⊂ A"",""A ≠ B""]",A = B
+Math,Relations & Functions,"If f(x) = 2x + 1, then f⁻¹(x) = ?","[""(x − 1)/2"",""2x − 1"",""1 − 2x"",""(x + 1)/2""]",(x − 1)/2
+Math,Trigonometry,cot x = 1/tan x is?,"[""True"",""False"",""Sometimes"",""Undefined""]",TRUE
+Math,Matrices,Product of 2×3 and 3×2 matrices is of order?,"[""2×2"",""3×3"",""2×3"",""3×2""]",2×2
+Math,Determinants,Determinant of a singular matrix is?,"[""0"",""1"",""−1"",""Undefined""]",0
+Math,Limits,limₓ→0 (eˣ − 1)/x = ?,"[""0"",""1"",""e"",""∞""]",1
+Math,Differentiation,Derivative of log x (base e) is?,"[""1/x"",""x"",""log x"",""eˣ""]",1/x
+Math,Integration,∫1/(1 + x²) dx = ?,"[""tan⁻¹ x"",""cot⁻¹ x"",""sec⁻¹ x"",""log x""]",tan⁻¹ x
+Math,Probability,Probability of getting a prime number on a die?,"[""1/2"",""1/3"",""1/6"",""2/3""]",1/2/2025
+Math,Statistics,"If mode = 7, which value occurs most?","[""7"",""6"",""8"",""5""]",7
+Math,Vectors,"Scalar triple product of i, j, k is?","[""0"",""1"",""−1"",""3""]",1
+Math,3D Geometry,"Distance between (2,3,4) and origin?","[""√29"",""√25"",""√30"",""√35""]",√29
+Math,Linear Programming,Corner points of feasible region are found by?,"[""Solving equations"",""Graphing inequalities"",""Using matrices"",""Trial and error""]",Graphing inequalities
+Math,Complex Numbers,"If z = a + ib, then Im(z) = ?","[""a"",""b"",""−b"",""0""]",b
+Math,Conic Sections,Parabola has how many directrices?,"[""1"",""2"",""0"",""∞""]",
+Biology,Cell Structure,Which organelle is known as the powerhouse of the cell?,"[""Nucleus"",""Mitochondria"",""Ribosome"",""Golgi body""]",Mitochondria
+Biology,Biomolecules,Which biomolecule is the main source of energy?,"[""Protein"",""Carbohydrate"",""Lipid"",""Vitamin""]",Carbohydrate
+Biology,Plant Physiology,Which hormone promotes cell elongation in plants?,"[""Auxin"",""Cytokinin"",""Gibberellin"",""Ethylene""]",Auxin
+Biology,Human Physiology,Which blood cells help in clotting?,"[""RBC"",""WBC"",""Platelets"",""Plasma""]",Platelets
+Biology,Genetics,Who is known as the father of genetics?,"[""Darwin"",""Mendel"",""Watson"",""Crick""]",Mendel
+Biology,Evolution,Which theory explains survival of the fittest?,"[""Lamarckism"",""Darwinism"",""Mutation theory"",""Cell theory""]",Darwinism
+Biology,Ecology,Which is a biotic component of ecosystem?,"[""Water"",""Soil"",""Plants"",""Air""]",Plants
+Biology,Reproduction,Which process forms gametes?,"[""Mitosis"",""Meiosis"",""Fertilization"",""Binary fission""]",Meiosis
+Biology,Biotechnology,Which technique is used to amplify DNA?,"[""PCR"",""ELISA"",""Gel electrophoresis"",""Cloning""]",PCR
+Biology,Human Health,Which disease is caused by Plasmodium?,"[""Typhoid"",""Malaria"",""Dengue"",""Cholera""]",Malaria
+Biology,Diversity of Life,Which kingdom includes multicellular eukaryotic autotrophs?,"[""Fungi"",""Plantae"",""Animalia"",""Protista""]",Plantae
+Biology,Cell Structure,Which organelle is involved in protein synthesis?,"[""Mitochondria"",""Ribosome"",""Golgi body"",""Lysosome""]",Ribosome
+Biology,Plant Physiology,Which process occurs in chloroplasts?,"[""Respiration"",""Photosynthesis"",""Transpiration"",""Digestion""]",Photosynthesis
+Biology,Human Physiology,Which part of brain controls balance?,"[""Cerebrum"",""Cerebellum"",""Medulla"",""Pons""]",Cerebellum
+Biology,Biomolecules,Which element is present in all amino acids?,"[""Carbon"",""Nitrogen"",""Sulphur"",""Phosphorus""]",Nitrogen
+Biology,Genetics,Which law states segregation of alleles?,"[""Law of dominance"",""Law of segregation"",""Law of independent assortment"",""Law of linkage""]",Law of segregation
+Biology,Evolution,Which fossil is considered a connecting link?,"[""Archaeopteryx"",""Homo erectus"",""Neanderthal"",""Australopithecus""]",Archaeopteryx
+Biology,Ecology,Which cycle involves nitrogen fixation?,"[""Carbon cycle"",""Nitrogen cycle"",""Water cycle"",""Oxygen cycle""]",Nitrogen cycle
+Biology,Reproduction,Which structure produces sperm in humans?,"[""Ovary"",""Testis"",""Uterus"",""Prostate""]",Testis
+Biology,Biotechnology,Which enzyme is used in PCR?,"[""Ligase"",""Polymerase"",""Helicase"",""Nuclease""]",Polymerase
+Biology,Human Health,Which vitamin deficiency causes rickets?,"[""Vitamin A"",""Vitamin B"",""Vitamin C"",""Vitamin D""]",Vitamin D
+Biology,Microbes,Which microbe is used in alcohol production?,"[""Bacteria"",""Virus"",""Yeast"",""Algae""]",Yeast
+Biology,Environment,Which gas is a greenhouse gas?,"[""O₂"",""N₂"",""CO₂"",""H₂""]",CO₂
+Biology,Cell Division,Which phase of mitosis involves chromosome alignment?,"[""Prophase"",""Metaphase"",""Anaphase"",""Telophase""]",Metaphase
+Biology,Plant Physiology,Which mineral is essential for chlorophyll synthesis?,"[""Iron"",""Magnesium"",""Calcium"",""Potassium""]",Magnesium
+Biology,Human Physiology,Which organ filters blood in humans?,"[""Heart"",""Liver"",""Kidney"",""Lungs""]",Kidney
+Biology,Genetics,Which molecule carries genetic code?,"[""DNA"",""RNA"",""Protein"",""Enzyme""]",DNA
+Biology,Evolution,Which scientist proposed mutation theory?,"[""Darwin"",""Lamarck"",""Hugo de Vries"",""Mendel""]",Hugo de Vries
+Biology,Ecology,Which term refers to all living organisms in an area?,"[""Biome"",""Community"",""Population"",""Biosphere""]",Community
+Biology,Reproduction,Which method is asexual reproduction?,"[""Fertilization"",""Binary fission"",""Meiosis"",""Pollination""]",Binary fission
+Biology,Diversity of Life,Which kingdom includes unicellular prokaryotes?,"[""Protista"",""Monera"",""Fungi"",""Plantae""]",Monera
+Biology,Cell Structure,Which organelle contains digestive enzymes?,"[""Mitochondria"",""Lysosome"",""Golgi body"",""Ribosome""]",Lysosome
+Biology,Plant Physiology,Which tissue transports water in plants?,"[""Phloem"",""Xylem"",""Cambium"",""Epidermis""]",Xylem
+Biology,Human Physiology,Which enzyme digests protein in stomach?,"[""Amylase"",""Lipase"",""Pepsin"",""Trypsin""]",Pepsin
+Biology,Biomolecules,Which biomolecule forms enzymes?,"[""Carbohydrates"",""Lipids"",""Proteins"",""Vitamins""]",Proteins
+Biology,Genetics,Which base pairs with adenine in DNA?,"[""Thymine"",""Cytosine"",""Guanine"",""Uracil""]",Thymine
+Biology,Evolution,Which structure is vestigial in humans?,"[""Appendix"",""Heart"",""Liver"",""Kidney""]",Appendix
+Biology,Ecology,Which term describes energy flow in ecosystem?,"[""Cycle"",""Chain"",""Pyramid"",""Web""]",Pyramid
+Biology,Reproduction,Which hormone triggers ovulation?,"[""FSH"",""LH"",""Estrogen"",""Progesterone""]",LH
+Biology,Biotechnology,Which vector is used in gene cloning?,"[""Plasmid"",""Virus"",""Bacteria"",""Enzyme""]",Plasmid
+Biology,Human Health,Which disease is caused by HIV?,"[""Malaria"",""AIDS"",""Tuberculosis"",""Typhoid""]",AIDS
+Biology,Microbes,Which microbe is used in curd formation?,"[""Yeast"",""Lactobacillus"",""Virus"",""Algae""]",Lactobacillus
+Biology,Environment,Which pollutant causes acid rain?,"[""CO₂"",""SO₂"",""O₂"",""CH₄""]",SO₂
+Biology,Cell Division,Which phase of meiosis reduces chromosome number?,"[""Meiosis I"",""Meiosis II"",""Interphase"",""Telophase""]",Meiosis I
+Biology,Plant Physiology,Which process is affected by stomata?,"[""Photosynthesis"",""Respiration"",""Transpiration"",""All of the above""]",All of the above
+Biology,Human Physiology,Which organ produces insulin?,"[""Liver"",""Pancreas"",""Kidney"",""Stomach""]",Pancreas
+Biology,Genetics,Which type of inheritance shows blending of traits?,"[""Dominant"",""Recessive"",""Incomplete dominance"",""Codominance""]",Incomplete dominance
+Biology,Evolution,Which concept explains origin of species?,"[""Natural selection"",""Artificial selection"",""Mutation"",""Adaptation""]",Natural selection
+Biology,Ecology,Which zone has maximum biodiversity?,"[""Temperate"",""Tropical"",""Polar"",""Desert""]",Tropical
+Biology,Reproduction,Which structure forms after fertilization in plants?,"[""Ovule"",""Seed"",""Fruit"",""Embryo""]",Seed
+Biology,Diversity of Life,Which group includes organisms without a nucleus?,"[""Fungi"",""Protista"",""Monera"",""Plantae""]",Monera
+Biology,Cell Structure,Which organelle is involved in lipid synthesis?,"[""Rough ER"",""Smooth ER"",""Golgi body"",""Ribosome""]",Smooth ER
+Biology,Plant Physiology,Which pigment is essential for photosynthesis?,"[""Chlorophyll"",""Carotene"",""Xanthophyll"",""Anthocyanin""]",Chlorophyll
+Biology,Human Physiology,Which blood group is universal donor?,"[""A"",""B"",""AB"",""O""]",O
+Biology,Biomolecules,Which biomolecule contains genetic information?,"[""Protein"",""DNA"",""Lipid"",""Vitamin""]",DNA
+Biology,Genetics,Which type of cross involves two traits?,"[""Monohybrid"",""Dihybrid"",""Test cross"",""Back cross""]",Dihybrid
+Biology,Evolution,Which structure is homologous to human hand?,"[""Bat wing"",""Bird wing"",""Insect wing"",""Fish fin""]",Bat wing
+Biology,Ecology,Which level includes all ecosystems?,"[""Community"",""Population"",""Biosphere"",""Biome""]",Biosphere
+Biology,Reproduction,Which method is vegetative propagation?,"[""Seed"",""Cutting"",""Pollination"",""Fertilization""]",Cutting
+Biology,Biotechnology,Which process introduces foreign DNA into host?,"[""Cloning"",""Transformation"",""Transcription"",""Translation""]",Transformation
+Biology,Human Health,Which disease is caused by Mycobacterium tuberculosis?,"[""Typhoid"",""Tuberculosis"",""Malaria"",""Dengue""]",Tuberculosis
+Biology,Microbes,Which microbe is used in sewage treatment?,"[""Virus"",""Bacteria"",""Algae"",""Fungi""]",Bacteria
+Biology,Environment,Which layer absorbs UV radiation?,"[""Troposphere"",""Stratosphere"",""Mesosphere"",""Exosphere""]",Stratosphere
+Biology,Cell Division,Which phase of cell cycle involves DNA replication?,"[""G1"",""S"",""G2"",""M""]",S
+Biology,Plant Physiology,Which hormone induces fruit ripening?,"[""Auxin"",""Gibberellin"",""Ethylene"",""Cytokinin""]",Ethylene
+Biology,Human Physiology,Which part of nephron filters blood?,"[""Loop of Henle"",""Bowman's capsule"",""Collecting duct"",""Tubule""]",Bowman's capsule
+Biology,Genetics,Which condition is caused by trisomy of chromosome 21?,"[""Turner syndrome"",""Klinefelter syndrome"",""Down syndrome"",""Edward syndrome""]",Down syndrome
+Biology,Evolution,Which term refers to change in gene frequency?,"[""Mutation"",""Genetic drift"",""Natural selection"",""Speciation""]",Genetic drift
+Biology,Ecology,Which pyramid is always upright?,"[""Energy"",""Biomass"",""Number"",""None""]",Energy
+Biology,Reproduction,Which structure develops into fruit?,"[""Ovule"",""Ovary"",""Seed"",""Embryo""]",Ovary
+Biology,Diversity of Life,Which kingdom includes organisms with cell walls but no chlorophyll?,"[""Plantae"",""Fungi"",""Protista"",""Monera""]",Fungi
+Biology,Cell Structure,Which organelle modifies and packages proteins?,"[""Ribosome"",""Golgi apparatus"",""Lysosome"",""Nucleus""]",Golgi apparatus
+Biology,Plant Physiology,Which process is affected by light intensity?,"[""Respiration"",""Photosynthesis"",""Transpiration"",""Guttation""]",Photosynthesis
+Biology,Human Physiology,Which part of eye controls amount of light entering?,"[""Lens"",""Retina"",""Cornea"",""Iris""]",Iris
+Biology,Biomolecules,Which biomolecule is insoluble in water?,"[""Protein"",""Carbohydrate"",""Lipid"",""Vitamin""]",Lipid
+Biology,Genetics,Which condition is sex-linked?,"[""Color blindness"",""Diabetes"",""Cancer"",""Asthma""]",Color blindness
+Biology,Evolution,Which term refers to formation of new species?,"[""Mutation"",""Speciation"",""Adaptation"",""Variation""]",Speciation
+Biology,Ecology,Which organism is a producer?,"[""Deer"",""Tiger"",""Grass"",""Fungi""]",Grass
+Biology,Reproduction,Which structure is male gametophyte in plants?,"[""Ovule"",""Pollen grain"",""Anther"",""Stigma""]",Pollen grain
+Biology,Biotechnology,Which crop is genetically modified for pest resistance?,"[""Bt cotton"",""Golden rice"",""Hybrid maize"",""Wheat""]",Bt cotton
+Biology,Human Health,Which organ is affected in hepatitis?,"[""Heart"",""Liver"",""Kidney"",""Lungs""]",Liver
+Biology,Microbes,Which microbe is used in antibiotic production?,"[""Penicillium"",""Yeast"",""Lactobacillus"",""Rhizobium""]",Penicillium
+Biology,Environment,Which protocol controls ozone depletion?,"[""Kyoto"",""Montreal"",""Paris"",""Geneva""]",Montreal
+Biology,Cell Division,Which phase of mitosis separates chromatids?,"[""Prophase"",""Metaphase"",""Anaphase"",""Telophase""]",Anaphase
+Biology,Plant Physiology,Which element is required for opening of stomata?,"[""Calcium"",""Potassium"",""Magnesium"",""Iron""]",Potassium
+Biology,Human Physiology,Which part of brain regulates heartbeat?,"[""Cerebrum"",""Cerebellum"",""Medulla oblongata"",""Pons""]",Medulla oblongata
+Biology,Genetics,Which technique is used to study chromosomes?,"[""Karyotyping"",""PCR"",""Gel electrophoresis"",""ELISA""]",Karyotyping
+Biology,Evolution,Which term refers to similarity due to common ancestry?,"[""Analogy"",""Homology"",""Convergence"",""Divergence""]",Homology
+Biology,Ecology,Which factor is abiotic?,"[""Bacteria"",""Temperature"",""Plants"",""Animals""]",Temperature
+Biology,Reproduction,Which method is used in tissue culture?,"[""Cutting"",""Grafting"",""Micropropagation"",""Layering""]",Micropropagation
+Biology,Diversity of Life,Which kingdom includes algae?,"[""Fungi"",""Protista"",""Plantae"",""Monera""]",Protista
+Biology,Cell Structure,Which organelle is absent in prokaryotic cells?,"[""Ribosome"",""Nucleus"",""Cell membrane"",""Cytoplasm""]",Nucleus
+Biology,Plant Physiology,Which process is measured by potometer?,"[""Photosynthesis"",""Respiration"",""Transpiration"",""Guttation""]",Transpiration
+Biology,Human Physiology,Which part of digestive system absorbs nutrients?,"[""Stomach"",""Small intestine"",""Large intestine"",""Esophagus""]",Small intestine
+Biology,Biomolecules,Which sugar is found in DNA?,"[""Ribose"",""Deoxyribose"",""Glucose"",""Fructose""]",Deoxyribose
+Biology,Genetics,Which condition is caused by a single gene mutation?,"[""Down syndrome"",""Sickle cell anemia"",""Diabetes"",""Cancer""]",Sickle cell anemia
+Biology,Evolution,Which term refers to evolution due to human activity?,"[""Natural selection"",""Artificial selection"",""Speciation"",""Mutation""]",Artificial selection
+Biology,Ecology,Which organism is a decomposer?,"[""Grass"",""Tiger"",""Fungi"",""Cow""]",Fungi
+Biology,Reproduction,Which structure is female gametophyte in plants?,"[""Ovule"",""Ovary"",""Embryo sac"",""Stigma""]",Embryo sac
+Biology,Biotechnology,Which technique separates DNA fragments?,"[""PCR"",""Gel electrophoresis"",""ELISA"",""Cloning""]",Gel electrophoresis

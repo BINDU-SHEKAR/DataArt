@@ -5,13 +5,11 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
       primaryKey: true,
     },
-   quiz_id: {
-  type: DataTypes.INTEGER,
-  primaryKey: true,
-  //autoIncrement: true
-},
-
-
+    quiz_id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -20,33 +18,33 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: true,
     },
-    created_by: {
+    timeLimit: {
       type: DataTypes.INTEGER,
-      allowNull: true,
-    },
-    questions: {
-      type: DataTypes.JSON,
       allowNull: false,
-      defaultValue: [],
+      defaultValue: 0,
     },
     takenBy: {
       type: DataTypes.JSON,
       allowNull: false,
       defaultValue: [],
     },
-    timeLimit: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 0,
-    },
     lastUpdated: {
       type: DataTypes.DATE,
       allowNull: true,
       defaultValue: DataTypes.NOW,
     },
+    questions: {
+      type: DataTypes.JSON,
+      allowNull: false,
+      defaultValue: [],
+    },
+    createdBy: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      field: 'created_by', // maps to DB column
+    },
   }, {
     tableName: 'quizzes',
     timestamps: true, // adds createdAt and updatedAt
-    // removed underscored: true to match camelCase columns in DB
   });
 };

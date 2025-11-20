@@ -150,7 +150,7 @@ const TakeTestPage = () => {
     if (confirmation && quiz) {
       const interval = setInterval(() => {
         autoSaveProgress();
-      }, 5001);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [confirmation, quiz]);

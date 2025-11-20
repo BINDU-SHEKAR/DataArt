@@ -5,7 +5,7 @@ import Layout from './Layout';
 
 const QuizDetails = () => {
   const navigate = useNavigate();
-  document.title = 'Details Page | QuizMaster';
+  document.title = 'Details Page | ScoreMax';
 
   const { quiz_id } = useParams();
 
